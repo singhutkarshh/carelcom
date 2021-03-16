@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Music Player</title>
+  </head>
+  <body>
+	<nav class="navbar navbar-light" style="background-color: #1A0CA0;">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">
+	    <div class="row">
+	    	<div class="col">
+	      		<img src="./img/music-icon.svg" style="width: 40px;height:40px;">
+	      	</div>
+	      	<div class="col">
+	      		<h3 style="color:white;">Carelcom- Music Player</h3>
+	      	</div>
+	    </div>
+	    </a>
+	  </div>
+	</nav>
+
+	<section class="container music-box">
+		<img class="imgRotateNot" id="image" src="./img/imgRotate.jpg">
+		<h1 class="header">Music Player</h1>
+		<div class="Title-box">
+			<audio id="audio" src="" class="pause"></audio>
+			<h3 id="title" class="songName">Play a Song</h3>
+		</div>
+		<div class="progress" id="progress-container">
+		  <div class="progress-bar" id="progressbar" style="width:0%"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
+		<div class="controllers">
+		<img class="control" id="previous" src="./img/skip-backward.svg">
+		<img class="control" id="play" src="./img/play.svg" style="margin-left:15px;">
+		<img class="control" id="pause" src="./img/pause.svg">
+		<img class="control" id="next" src="./img/skip-forward.svg">
+		</div>
+	</section>
+   
+
+
+   <script type="text/javascript" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+

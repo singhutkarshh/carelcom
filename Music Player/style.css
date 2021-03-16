@@ -1,0 +1,110 @@
+body{
+	z-index: 10;
+	background-color:#23BFB2;
+}
+.music-box{
+	background-color:#FFFFFF;
+	width: 500px;
+	height:300px;
+	border:3px solid white;
+	position: relative;
+	margin-top: 10%;
+	outline: 3px solid white;
+	outline-offset: 40px;
+}
+.header{
+	color: #1A0CA0;
+	position: absolute;
+	top: 8%;
+	right:25%;
+	text-shadow:2px 2px 2px grey;
+}
+.imgRotate{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top:-60px;
+	left:-50px;
+	border-radius:80px;
+	animation: rotate 2s linear infinite;
+	z-index: 20;
+}
+.imgRotateNot{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top:-60px;
+	left:-50px;
+	border-radius:80px;
+	animation: rotate infinite infinite;
+	z-index: 20;
+}
+@keyframes rotate{
+	from{
+		transform:rotate(0deg);
+	}
+	to{
+		transform:rotate(360deg);
+	}
+}
+.Title-box{
+	margin-top:20%;
+	border-top:3px solid #8C8080;
+	border-bottom:3px solid #8C8080;
+}
+.songName{
+	margin-top:5px;
+	text-align: center;
+	text-shadow:2px 2px 2px grey;
+	animation: translate 6s linear infinite;
+}
+@keyframes translate{
+	0%{
+		transform: translateX(-130px);
+		opacity: 0%;
+		}
+    5%{
+    	opacity: 100%;
+    }
+    45%{
+    	opacity: 100%;
+    }
+	50%{
+		transform: translateX(130px);
+		opacity: 0%;
+	}
+	55%{
+		opacity: 100%;
+	}
+	90%{
+		opacity: 100%;
+	}
+	100%{
+		transform: translateX(-130px);
+		opacity: 0%;
+		}
+}
+.progress{
+	margin-top: 5%;
+}
+.controllers{
+	margin-left: 30%;
+	margin-top:5%;
+}
+.control{
+	width:40px;
+	height:40px;
+	margin-left: 10px;
+}
+#previous:active{
+	transform: translateY(4px);
+}
+#play:active{
+	transform: translateY(4px);
+}
+#pause:active{
+	transform: translateY(4px);
+}
+#next:active{
+	transform: translateY(4px);
+}
