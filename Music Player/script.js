@@ -79,7 +79,6 @@ function prevSong(){
 
 function pause(){
 	pauseSong();
-	index=0;
 }
 
 function setProgress(e){
